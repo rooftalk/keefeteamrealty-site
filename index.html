@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Keefe Team | Aledo & Parker County Real Estate</title>
+<meta name="description" content="Lisa and Jennifer Keefe, a mother-daughter REALTOR® team with JLA Realty serving Aledo, Willow Park, Weatherford and Parker County. Homes, acreage and horse property. Free moving trailer for clients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: full-width bands, 1120px inner column, alternating paper/navy sections */
+:root{
+  --navy:#1B3658; --navy-deep:#122540; --paper:#FBF8F2; --cream:#F1EADC; --ink:#1E232B; --muted:#5C6470;
+  --leather:#9C6B3C; --leather-dk:#7A5230; --line:#E1D9CB; --white:#fff;
+  --display:"Libre Caslon Text",Georgia,serif; --body:"Figtree",-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+img{max-width:100%;display:block}
+a{color:var(--navy)}
+h1,h2,h3{font-family:var(--display);line-height:1.12;margin:0;text-wrap:balance;font-weight:700}
+h2{font-size:clamp(28px,4vw,40px)}
+h3{font-size:22px}
+p{margin:0}
+.in{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.band{padding-block:72px}
+.band.tight{padding-block:48px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--leather)}
+.navy .eyebrow{color:#D8B98F}
+.navy{background:var(--navy);color:#EEF2F7}
+.navy h2,.navy h3{color:#fff}
+.btn{display:inline-block;padding:14px 24px;border-radius:6px;font-weight:700;text-decoration:none;font-size:16px;border:2px solid transparent}
+.btn.primary{background:var(--leather);color:#fff}
+.btn.primary:hover{background:var(--leather-dk)}
+.btn.ghost{border-color:currentColor;color:inherit}
+.btn.navy{background:var(--navy);color:#fff}
+.lede{font-size:19px;color:var(--muted);max-width:62ch}
+.navy .lede{color:#C9D3E0}
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.stack{display:grid;gap:16px}
+.photo{background:linear-gradient(135deg,#C9B9A0,#8E7A5F);border-radius:8px;aspect-ratio:4/3;max-width:100%;display:grid;place-items:center;color:#fff;font-weight:600;text-align:center;padding:16px;font-size:14px;letter-spacing:.04em}
+.photo.tall{aspect-ratio:3/4}
+.photo.wide{aspect-ratio:16/9}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(251,248,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
+.brand .mark{width:40px;height:40px;border-radius:8px;background:var(--navy);display:grid;place-items:center;color:#fff;font-family:var(--display);font-weight:700;font-size:18px}
+.brand b{font-family:var(--display);font-size:20px;line-height:1}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-family:var(--body)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-weight:600;font-size:15px}
+nav ul a{text-decoration:none;color:var(--ink)}
+nav .call{white-space:nowrap}
+@media (max-width:860px){nav ul{display:none}}
+
+/* hero */
+.hero{background:var(--navy-deep);color:#fff;position:relative;overflow:hidden}
+.hero .in{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding-block:80px}
+.hero h1{font-size:clamp(36px,5.6vw,62px);color:#fff}
+.hero h1 em{font-style:italic;color:#E2C39A}
+.hero p.lede{color:#C9D3E0;margin-top:20px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero .ghost{color:#fff}
+.hero-img{width:100%;height:auto;border-radius:10px;box-shadow:0 30px 60px rgba(0,0,0,.35);object-fit:cover}
+.portrait{width:100%;height:auto;border-radius:10px;aspect-ratio:3/4;object-fit:cover}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}
+.strip img{width:100%;height:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+.strip figure{margin:0;display:grid;gap:8px}
+.strip figcaption{font-size:13px;color:#C9D3E0}
+@media (max-width:860px){.strip{grid-template-columns:repeat(2,1fr)}}
+.band-photo{position:relative;background:url(/img/sunset-horses.jpg) center/cover no-repeat;min-height:320px;display:grid;align-items:end}
+.band-photo .in{padding-block:40px;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.band-photo h2{color:#fff}
+.areas-line{margin-top:28px;font-size:14px;color:#9FB0C6;letter-spacing:.04em}
+@media (max-width:860px){.hero .in{grid-template-columns:1fr;padding-block:56px}.hero-img{aspect-ratio:4/3;max-height:420px}}
+
+/* trailer */
+.trailer{background:var(--cream);border-block:1px solid var(--line)}
+.trailer .in{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding-block:56px}
+.trailer h2{color:var(--navy)}
+.trailer ul{margin:18px 0 0;padding-left:20px;display:grid;gap:8px}
+.badge{display:inline-block;background:var(--leather);color:#fff;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:4px;margin-bottom:14px}
+@media (max-width:860px){.trailer .in{grid-template-columns:1fr}}
+
+/* services */
+.card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:28px;display:grid;gap:10px;align-content:start}
+.card .ico{width:44px;height:44px;border-radius:10px;background:var(--cream);display:grid;place-items:center;color:var(--leather)}
+.card p{color:var(--muted);font-size:16px}
+
+/* about */
+.about .in{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.person{display:grid;gap:16px}
+.person .role{font-size:14px;color:var(--leather);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.person p{color:var(--muted)}
+.lic{font-size:13px;color:var(--muted)}
+@media (max-width:860px){.about .in{grid-template-columns:1fr}}
+
+/* community */
+.community .grid{margin-top:36px}
+.community .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)}
+.community .card p{color:#C9D3E0}
+.community .card .ico{background:rgba(255,255,255,.1);color:#E2C39A}
+
+/* stories */
+.quote{background:var(--white);border-left:4px solid var(--leather);padding:24px 28px;border-radius:0 10px 10px 0;display:grid;gap:10px}
+.quote p{font-family:var(--display);font-size:19px;line-height:1.45}
+.quote small{color:var(--muted);font-weight:600}
+
+/* reviews */
+.stars{color:#D9A441;letter-spacing:2px;font-size:18px}
+.review{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;display:grid;gap:10px}
+.review p{color:var(--ink)}
+.review small{color:var(--muted)}
+
+/* areas */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.chip{background:var(--white);border:1px solid var(--line);padding:10px 16px;border-radius:999px;font-weight:600;font-size:15px}
+
+/* contact */
+.contact .in{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:start}
+form{display:grid;gap:14px;background:#fff;color:var(--ink);padding:28px;border-radius:12px}
+form label{display:grid;gap:6px;font-weight:600;font-size:15px}
+form input,form select,form textarea{font:inherit;padding:12px;border:1px solid var(--line);border-radius:6px;width:100%}
+form textarea{min-height:110px;resize:vertical}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.direct{display:grid;gap:18px}
+.direct a{color:#fff;font-weight:700;text-decoration:none;font-size:22px;font-family:var(--display)}
+.social{display:flex;flex-wrap:wrap;gap:12px}
+.social a{font-size:15px;color:#C9D3E0;text-decoration:none;border:1px solid rgba(255,255,255,.25);padding:8px 14px;border-radius:999px}
+#thanks{display:none;background:var(--cream);padding:24px;border-radius:12px;color:var(--ink)}
+@media (max-width:860px){.contact .in{grid-template-columns:1fr}form .row{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--navy-deep);color:#9FB0C6;font-size:14px;padding-block:40px}
+footer .in{display:grid;gap:18px}
+footer a{color:#C9D3E0}
+.legal{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.eho{display:inline-flex;align-items:center;gap:8px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="in">
+    <a class="brand" href="#top"><span class="mark">K</span><span><b>The Keefe Team</b><small>JLA Realty · Aledo, Texas</small></span></a>
+    <ul>
+      <li><a href="#sell">Sell</a></li><li><a href="#buy">Buy</a></li><li><a href="#horse">Horse Property</a></li><li><a href="#about">About</a></li><li><a href="#community">Community</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn navy call" href="tel:8178073367">817-807-3367</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="in">
+    <div>
+      <div class="eyebrow" style="color:#E2C39A">Mother &amp; daughter REALTORS® · Aledo, Texas</div>
+      <h1 style="margin-top:14px">Real estate the way <em>neighbors</em> do it.</h1>
+      <p class="lede">Lisa and Jennifer Keefe have helped more than 250 families buy and sell across Parker County and west Fort Worth. Homes, acreage and horse property, handled by people who actually live this life.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get a free home value</a>
+        <a class="btn ghost" href="#trailer">Free moving trailer →</a>
+      </div>
+      <p class="areas-line">Aledo · Willow Park · Hudson Oaks · Weatherford · Annetta · Walsh Ranch · Benbrook · West Fort Worth · Granbury</p>
+    </div>
+    <img class="hero-img" src="/img/hero-lisa-jennifer.jpg" alt="Jennifer and Lisa Keefe in front of a home in Aledo, Texas" width="1120" height="1400" fetchpriority="high">
+  </div>
+</header>
+
+<section class="trailer" id="trailer">
+  <div class="in">
+    <div class="photo wide">PHOTO: the enclosed 16 ft trailer, hitched up</div>
+    <div>
+      <span class="badge">Client perk</span>
+      <h2>Move for free with our 16-foot enclosed trailer.</h2>
+      <p class="lede" style="margin-top:14px">Buy or sell with the Keefe Team and the trailer is yours to use, at no charge. One less thing to rent, schedule or pay for on moving day.</p>
+      <ul>
+        <li>Enclosed, 16 ft, with a ramp for furniture and appliances</li>
+        <li>Available to any Keefe Team buyer or seller within 50 miles</li>
+        <li>Just reserve your dates with us before closing</li>
+      </ul>
+      <p style="margin-top:20px"><a class="btn navy" href="#contact">Ask about the trailer</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="sell">
+  <div class="in">
+    <div class="eyebrow">What we do</div>
+    <h2 style="margin-top:10px;color:var(--navy)">Not order takers. Problem solvers.</h2>
+    <p class="lede" style="margin-top:14px">Every property is also an investment. We help you think through the long game: what it's worth today, what it could be worth, and how you'd exit when the time comes.</p>
+    <div class="grid g4" style="margin-top:40px">
+      <div class="card"><div class="ico">⌂</div><h3>Selling your home</h3><p>Pricing that holds up, marketing that reaches real buyers, and a free trailer when it's time to go.</p></div>
+      <div class="card" id="buy"><div class="ico">⚲</div><h3>Buying in Parker County</h3><p>From first homes to forever homes. We know the schools, the water, the soil and the commute.</p></div>
+      <div class="card" id="horse"><div class="ico">⚑</div><h3>Horse property &amp; acreage</h3><p>Barns, fencing, arenas, hay storage and ag exemptions. We've lived it for 26 years, so we see what others miss.</p></div>
+      <div class="card"><div class="ico">✦</div><h3>Seniors &amp; downsizing</h3><p>Lisa is a Seniors Real Estate Specialist (SRES®). Patient, practical help for the next chapter and for intergenerational living.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band about" id="about" style="background:var(--cream)">
+  <div class="in">
+    <div class="person">
+      <img class="portrait" src="/img/lisa.jpg" alt="Lisa Keefe" width="750" height="1000" loading="lazy">
+      <div class="role">Lisa Keefe · Broker Associate, SRES®</div>
+      <h2 style="color:var(--navy)">Raised west of the Brazos. Still here.</h2>
+      <p>An Army officer's daughter whose family settled west of the Brazos River, Lisa spent twenty years in healthcare marketing before coming home to Texas in 2013. That same year she and her husband Robert restored her great-grandparents' century-old farmhouse, a place other families now make memories in.</p>
+      <p>Lisa is a graduate of the Texas REALTORS® Leadership Program and chairs the Community Service Committee of the Greater Metro West Association of REALTORS®. When she's not working, she's usually at the barn.</p>
+      <p class="lic">Texas license #0691469</p>
+    </div>
+    <div class="person">
+      <img class="portrait" src="/img/jennifer.jpg" alt="Jennifer Keefe" width="750" height="1000" loading="lazy">
+      <div class="role">Jennifer Keefe · REALTOR®</div>
+      <h2 style="color:var(--navy)">The next generation of the team.</h2>
+      <p>Jennifer grew up in the 4-H horse ring alongside her mother and now co-leads the Parker County 4-H Novice Horse Project with her. <span style="color:var(--leather);font-weight:600">[Jennifer: add 2–3 sentences about your role and background here.]</span></p>
+      <p class="lic">Texas license #0781916</p>
+    </div>
+  </div>
+</section>
+
+<section class="band navy community" id="community">
+  <div class="in">
+    <div class="eyebrow">Community</div>
+    <h2 style="margin-top:10px">We were part of this community long before we sold homes in it.</h2>
+    <div class="grid g3">
+      <div class="card"><div class="ico">♞</div><h3>26 years of 4-H horsemanship</h3><p>Lisa has led 4-H horse projects in Missouri and Texas since 1999. Today she and Jennifer lead the Parker County 4-H Novice Horse Project, teaching kids what a horse can teach you about patience and work.</p></div>
+      <div class="card"><div class="ico">✝</div><h3>Faith Fridays</h3><p>In 2025 Lisa started a weekly virtual gathering for agents to talk about what it means to be a Christian in the marketplace. It's open to any agent who wants to join.</p></div>
+      <div class="card"><div class="ico">★</div><h3>Yoshi</h3><p>Lisa's show partner since 2017. He closed out his career in 2025 as High Point Solid W-T Champion at the Pinto Horse Association Color Breed Congress. He now teaches the grandkids to ride.</p></div>
+    </div>
+    <div class="strip">
+      <figure><img src="/img/yoshi-champion.jpg" alt="Lisa and Jennifer with Yoshi at the Pinto Color Breed Congress, High Point awards" loading="lazy"><figcaption>Color Breed Congress, 2025: Yoshi's High Point titles</figcaption></figure>
+      <figure><img src="/img/show-ring.jpg" alt="Lisa and Jennifer in the show ring with their horses" loading="lazy"><figcaption>Show day with the horses</figcaption></figure>
+      <figure><img src="/img/arena-selfie.jpg" alt="Jennifer on horseback with Lisa in the arena" loading="lazy"><figcaption>Arena time</figcaption></figure>
+      <figure><img src="/img/barn.jpg" alt="Horses at the barn" loading="lazy"><figcaption>Home at the barn</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="band-photo" aria-label="Horses at sunset in Parker County">
+  <div class="in"><div class="eyebrow" style="color:#E2C39A">Parker County</div><h2>This is home.</h2></div>
+</section>
+
+<section class="band" id="stories">
+  <div class="in">
+    <div class="eyebrow">Stories from the field</div>
+    <h2 style="margin-top:10px;color:var(--navy)">Every closing has a story.</h2>
+    <div class="grid g3" style="margin-top:36px">
+      <div class="quote"><p>A young couple noticed a bird's nest in the front-yard tree of a home we toured. They took it as a sign: this was where they'd build their own nest. We wrote the offer that night.</p><small>Buyers · Parker County</small></div>
+      <div class="quote"><p>One client trusted us to help him buy a home he never saw in person until closing day. He walked in and was delighted.</p><small>Relocation buyer</small></div>
+      <div class="quote"><p>Most recently we helped a family find a small acreage horse property that will be the perfect place for three generations to live together.</p><small>Horse property · Parker County</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="reviews" style="background:var(--cream)">
+  <div class="in">
+    <div class="eyebrow">Reviews</div>
+    <h2 style="margin-top:10px;color:var(--navy)">What clients say</h2>
+    <div class="grid g3" style="margin-top:36px">
+      <div class="review"><div class="stars">★★★★★</div><p>[Google review 1 — pulled from Lisa's Google Business Profile]</p><small>— Client name</small></div>
+      <div class="review"><div class="stars">★★★★★</div><p>[Google review 2]</p><small>— Client name</small></div>
+      <div class="review"><div class="stars">★★★★★</div><p>[Google review 3]</p><small>— Client name</small></div>
+    </div>
+    <p style="margin-top:28px"><a class="btn navy" href="https://www.google.com/search?q=Lisa+Keefe+JLA+Realty+reviews" target="_blank" rel="noopener">Read all reviews on Google</a></p>
+  </div>
+</section>
+
+<section class="band tight" id="areas">
+  <div class="in">
+    <div class="eyebrow">Where we work</div>
+    <h2 style="margin-top:10px;color:var(--navy)">Parker County and west Tarrant County</h2>
+    <div class="chips">
+      <span class="chip">Aledo</span><span class="chip">Willow Park</span><span class="chip">Hudson Oaks</span><span class="chip">Weatherford</span><span class="chip">Annetta</span><span class="chip">Walsh Ranch</span><span class="chip">Benbrook</span><span class="chip">West Fort Worth</span><span class="chip">Granbury</span><span class="chip">Springtown</span><span class="chip">Azle</span>
+    </div>
+  </div>
+</section>
+
+<section class="band navy contact" id="contact">
+  <div class="in">
+    <div class="direct">
+      <div class="eyebrow">Let's talk</div>
+      <h2>Tell us what you're thinking about.</h2>
+      <p class="lede">Selling, buying, curious what your place is worth, or just want to ask about the trailer. No pressure, no scripts.</p>
+      <div><a href="tel:8178073367">817-807-3367</a><br><a href="mailto:lisa@lisakeefe.realtor" style="font-size:17px;font-family:var(--body);font-weight:600">lisa@lisakeefe.realtor</a></div>
+      <div class="social">
+        <a href="https://www.facebook.com/lisa.keefe.2025/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/kcatco/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@lisabufordkeefe" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.youtube.com/@lisakeefe8030" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.linkedin.com/in/lisa-keefe-5457255/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div>
+      <form id="leadForm">
+        <input name="company" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+        <label>Name <input name="name" required autocomplete="name"></label>
+        <div class="row">
+          <label>Phone <input name="phone" type="tel" autocomplete="tel"></label>
+          <label>Email <input name="email" type="email" required autocomplete="email"></label>
+        </div>
+        <label>I'm interested in
+          <select name="interest">
+            <option>Selling my home</option><option>Buying a home</option><option>Horse property or acreage</option><option>What my home is worth</option><option>The free moving trailer</option><option>Something else</option>
+          </select>
+        </label>
+        <label>Property address (optional) <input name="address" autocomplete="street-address"></label>
+        <label>Anything else? <textarea name="message"></textarea></label>
+        <button class="btn primary" type="submit">Send to Lisa &amp; Jennifer</button>
+        <small style="color:var(--muted)">We reply the same day, usually faster.</small>
+      </form>
+      <div id="thanks"><h3 style="color:var(--navy)">Got it. Thank you!</h3><p style="margin-top:8px">Lisa or Jennifer will reach out shortly. If it's urgent, call 817-807-3367.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="in">
+    <div><b style="color:#fff">The Keefe Team</b> · Lisa Keefe, Broker Associate (TX #0691469) · Jennifer Keefe, REALTOR® (TX #0781916)<br>JLA Realty · Serving Aledo, Parker County and west Fort Worth, Texas</div>
+    <div class="legal">
+      <a href="https://www.trec.texas.gov/forms/consumer-protection-notice" target="_blank" rel="noopener">Texas Real Estate Commission Consumer Protection Notice</a>
+      <a href="#" id="iabs">Information About Brokerage Services</a>
+      <span class="eho">⌂ Equal Housing Opportunity</span>
+    </div>
+    <div>© 2026 The Keefe Team. REALTOR® is a registered trademark of the National Association of REALTORS®.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const f=e.target,data=Object.fromEntries(new FormData(f).entries());
+  try{
+    const btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Sending…';
+    const r=await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    if(!r.ok)throw 0;
+    f.style.display='none';document.getElementById('thanks').style.display='block';
+  }catch(err){
+    const btn=f.querySelector('button[type=submit]');btn.disabled=false;btn.textContent='Send to Lisa & Jennifer';
+    alert('Sorry, that did not go through. Please call or text 817-807-3367.');
+  }
+});
+</script>
+</body>
+</html>

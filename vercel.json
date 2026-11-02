@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/lead", "destination": "https://gyscjcbgzkkqdjlapxnu.supabase.co/functions/v1/keefe-lead" }
+  ],
+  "headers": [
+    { "source": "/(.*)", "headers": [ { "key": "X-Content-Type-Options", "value": "nosniff" } ] }
+  ]
+}
