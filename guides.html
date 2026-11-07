@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CBQDJ9P7MZ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CBQDJ9P7MZ');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Free Guides | The Keefe Team</title>
 <meta name="description" content="Free downloads from The Keefe Team: the JLA Buyer's Guide, JLA Seller's Guide, and Before You Buy Your Child's First Horse.">
@@ -113,6 +116,7 @@ document.getElementById('guideForm').addEventListener('submit',async function(e)
     const r=await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
     if(!r.ok)throw 0;
     f.style.display='none';document.getElementById('thanks').style.display='block';
+    if(window.gtag)gtag('event','generate_lead',{form:'guides',guide:d.guide});
   }catch(x){btn.disabled=false;btn.textContent='Get the guides';err.style.display='block';}
 });
 </script>
