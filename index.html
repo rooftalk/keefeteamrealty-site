@@ -217,6 +217,7 @@ document.getElementById('leadForm').addEventListener('submit',async function(e){
     const r=await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
     if(!r.ok)throw 0;
     f.style.display='none';document.getElementById('thanks').style.display='block';
+    if(window.gtag)gtag('event','generate_lead',{form:'contact',interest:data.interest});
   }catch(err){
     const btn=f.querySelector('button[type=submit]');btn.disabled=false;btn.textContent='Send to Lisa & Jennifer';
     alert('Sorry, that did not go through. Please call or text 817-807-3367.');
