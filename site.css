@@ -59,9 +59,9 @@ nav .call{white-space:nowrap}
 .hero-img{width:100%;height:auto;border-radius:10px;box-shadow:0 30px 60px rgba(0,0,0,.35);object-fit:cover}
 .portrait{width:100%;height:auto;border-radius:10px;aspect-ratio:3/4;object-fit:cover}
 .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}
-.strip img{width:100%;height:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
-.strip figure{margin:0;display:grid;gap:8px}
-.strip figcaption{font-size:13px;color:#C9D3E0}
+.strip img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:8px}
+.strip figure{margin:0;display:block}
+.strip figcaption{display:block;margin-top:10px;font-size:14px;line-height:1.4;color:#fff;font-weight:600}
 @media (max-width:860px){.strip{grid-template-columns:repeat(2,1fr)}}
 .band-photo{position:relative;background:url(/img/sunset-horses.jpg) center/cover no-repeat;min-height:320px;display:grid;align-items:end}
 .band-photo .in{padding-block:40px;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.6)}
